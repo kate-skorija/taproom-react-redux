@@ -1,4 +1,4 @@
-import rootReducer from '../../reducers/index-reducer';
+import rootReducer from '../../reducers/index';
 import formVisibleReducer from '../../reducers/form-visible-reducer';
 import kegListReducer from '../../reducers/keg-list-reducer';
 import selectedKegReducer from '../../reducers/selected-keg-reducer';
@@ -15,7 +15,8 @@ describe('rootReducer', () => {
     expect(rootReducer({}, { type: null })).toEqual({
       masterKegList: {},
       formVisibleOnPage: false,
-      selectedKeg: null
+      selectedKeg: null,
+      editing: false
     });
   });
 

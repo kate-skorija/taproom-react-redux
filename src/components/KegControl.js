@@ -53,6 +53,7 @@ class KegControl extends React.Component {
   handleDeletingKeg = (id) => {
     const { dispatch } = this.props;
     const action = a.deleteKeg(id);
+    // this.props.selectedKeg = null;
     dispatch(action);
   };
 
@@ -71,7 +72,7 @@ class KegControl extends React.Component {
   render(){
     let currentlyVisibleState = null;
     let buttonText = null;
-    if (this.state.editing) {
+    if (this.props.editing) {
       currentlyVisibleState = <EditKegForm 
                                 keg = {this.props.selectedKeg} 
                                 onEditKeg = {this.handleEditingKeg} />
@@ -82,7 +83,7 @@ class KegControl extends React.Component {
                                 onClickingDelete = {this.handleDeletingKeg} 
                                 onClickingEdit = {this.handleEditClick} />
       buttonText = "Return to Keg List"
-    } else if (this.state.formVisibleOnPage) {
+    } else if (this.props.formVisibleOnPage) {
       currentlyVisibleState = <NewKegForm 
                                 onNewKegCreation = {this.handleAddingNewKegToList} />
       buttonText = "Return to Keg List"
