@@ -2,36 +2,40 @@ import React from "react";
 import PropTypes from "prop-types";
 
 function ReusableForm(props){
+
+  const formStyles = {
+    
+  }
   
   return (
     <React.Fragment>
-      <form onSubmit={props.formSubmissionHandler}>
-        <input 
+      <form style={formStyles} className="form-group" onSubmit={props.formSubmissionHandler}>
+        <input style={{margin: '20px'}} className='form-control input-sm'
         type='text'
         name='name'
         placeholder='Name of Beer'
         />
-        <input 
+        <input style={{margin: '20px'}} className='form-control input-sm'
         type='text'
         name='brand'
         placeholder='Brand'
         />
-        <input 
+        <input style={{margin: '20px'}} className='form-control input-sm'
         type = 'text'
         name= 'price'
         placeholder = 'Price per Pint'
         />
-        <input 
+        <input style={{margin: '20px'}} className='form-control input-sm'
         type = 'text'
         name='alcoholContent'
         placeholder = 'ABV%'
         />
-        <input 
+        <input style={{margin: '20px'}} className='form-control input-sm'
         type = 'number'
         name='pintsRemaining'
         placeholder = 'Number of Pints'
         />
-        <button type='submit'>{props.buttonText}</button>
+        <button className="btn btn-dark" type='submit'>{props.buttonText}</button>
       </form>
     </React.Fragment>
   );

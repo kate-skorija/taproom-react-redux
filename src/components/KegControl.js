@@ -7,7 +7,6 @@ import { connect } from 'react-redux';
 import PropTypes from "prop-types";
 import * as a from './../actions';
 
-
 class KegControl extends React.Component {
 
   constructor(props) {
@@ -100,14 +99,25 @@ class KegControl extends React.Component {
                                 onPintSoldClick = {this.handlePintSold} />
       buttonText = "Add Keg"
     }
+
+    const bodyStyles = {
+      margin: '40px',
+      backgroundColor: 'tomato',
+    }
+
     return (
       <React.Fragment>
-        {currentlyVisibleState}
-        <button onClick={this.handleClick}>{buttonText}</button>
+        <div styles={bodyStyles}>
+          {currentlyVisibleState}
+          <button className="btn btn-dark" onClick={this.handleClick}>{buttonText}</button>
+        </div>
       </React.Fragment>
     );
+
   }
 }
+
+
 
 KegControl.propTypes = {
   masterKegList: PropTypes.object,
