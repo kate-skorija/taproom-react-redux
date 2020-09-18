@@ -26,6 +26,12 @@ export const selectKeg = (keg) => {
 	};
 };
 
+export const deselectKeg = () => {
+  return {
+    type: c.DESELECT_KEG
+  }
+}
+
 export const addKeg = (keg) => {
   const { name, brand, price, alcoholContent, pintsRemaining, id } = keg;
 	return {

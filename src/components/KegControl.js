@@ -18,10 +18,11 @@ class KegControl extends React.Component {
   handleClick = () => {
     const { dispatch } = this.props;
     if (this.props.selectedKeg != null) {
-      this.props.selectedKeg = null;
-    } else {
-      const action = a.toggleForm();
+      const action = a.deselectKeg();
       dispatch(action);
+    } else {
+      const action2 = a.toggleForm();
+      dispatch(action2);
     };
   };
 
@@ -53,8 +54,9 @@ class KegControl extends React.Component {
   handleDeletingKeg = (id) => {
     const { dispatch } = this.props;
     const action = a.deleteKeg(id);
-    // this.props.selectedKeg = null;
+    const action2 = a.deselectKeg();
     dispatch(action);
+    dispatch(action2);
   };
 
   handleEditClick = () => {

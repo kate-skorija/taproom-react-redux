@@ -12,6 +12,8 @@ export default (state = null, action) => {
         pintsRemaining: pintsRemaining,
         id: id }
     }
+    case c.DESELECT_KEG:
+      return null;
     default:
       return state;
   }
