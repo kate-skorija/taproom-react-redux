@@ -1,4 +1,4 @@
-# Tap Room 
+# Taproom 
 
 ## _React with Redux Code Review for Epicodus, 09.11.2020_
 <br>
@@ -8,7 +8,7 @@
 
 ## Description
 
-This week we learned how to integrate Redux into our React applications, focusing planning where state lives, implementing Redux with single and multiple state slices, and moving local and shared state to the Redux store. This is an app for a tap room, where a user can see all kegs available, view a kegs detail's, add a new keg, delete a keg, and update a keg's information. Users can also keep track of how many pints of a keg are sold. 
+This week we learned how to integrate Redux into our React applications, focusing planning where state lives, TDD for reducers, and implementing Redux with single and multiple state slices. This is an app for a tap room, where a user can see all kegs available, view a kegs detail's, add a new keg, delete a keg, and update a keg's information. Users can also keep track of how many pints of a keg are sold. 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 <br><br>
