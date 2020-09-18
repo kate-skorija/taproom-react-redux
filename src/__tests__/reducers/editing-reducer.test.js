@@ -1,4 +1,5 @@
 import editingReducer from '../../reducers/editing-reducer';
+import * as c from './../../actions/ActionTypes';
 
 describe('editingReducer', () => {
 
@@ -7,6 +8,6 @@ describe('editingReducer', () => {
   });
 
   test('Should toggle editing form visibility state to true', () => {
-    expect(editingReducer(false, { type: 'TOGGLE_FORM' })).toEqual(true);
+    expect(editingReducer(false, { type: c.TOGGLE_FORM })).toEqual(true);
   });
 })

@@ -1,4 +1,5 @@
 import selectedKegReducer from '../../reducers/selected-keg-reducer';
+import * as c from './../../actions/ActionTypes';
 
 describe('selectedKegReducer', () => {
 
@@ -19,7 +20,7 @@ describe('selectedKegReducer', () => {
   test('Should return selected keg', () => {
     const { name, brand, price, alcoholContent, pintsRemaining, id } = kegData;
     action = {
-      type: 'SELECT_KEG',
+      type: c.SELECT_KEG,
       name: name,
       brand: brand,
       price: price,
@@ -36,6 +37,6 @@ describe('selectedKegReducer', () => {
         pintsRemaining: pintsRemaining,
         id: id
       }
-    })
-  })
-})
+    });
+  });
+});

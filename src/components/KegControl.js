@@ -5,6 +5,7 @@ import KegDetail from './KegDetail';
 import EditKegForm from './EditKegForm';
 import { connect } from 'react-redux';
 import PropTypes from "prop-types";
+import * as a from './../actions'
 
 class KegControl extends React.Component {
 
@@ -14,15 +15,12 @@ class KegControl extends React.Component {
   }
 
   handleClick = () => {
-    if (this.state.selectedKeg != null) {
-      this.setState({
-        formVisibleOnPage: false,
-        selectedKeg: null,
-        editing: false
-      });
+    const { dispatch } = this.props;
+    if (this.props.selectedKeg != null) {
+      this.props.selectedKeg = null;
     } else {
     this.setState(prevState => ({
-      formVisibleOnPage: !prevState.formVisibleOnPage
+      const action = 
     }));
     }
   }
