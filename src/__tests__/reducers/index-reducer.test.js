@@ -29,4 +29,40 @@ describe('rootReducer', () => {
     expect(store.getState().selectedKeg).toEqual(selectedKegReducer(undefined, { type: null }));
   });
 
+  test('Check that initial state of kegListReducer matches root reducer', () => {
+    const action = {
+      type: 'ADD_KEG',
+      name: 'T-Rex Tripel',
+      brand: 'Fossil Cove Brewery',
+      price: '$6.00',
+      alcoholContent: '8.0%',
+      pintsRemaining: 124,
+      id: 1 
+    }
+    store.dispatch(action);
+    expect(store.getState().masterKegList).toEqual(kegListReducer(undefined, action));
+  });
+  
+  test('Check that initial state of formVisibleReducer matches root reducer', () => {
+    const action = {
+      type: 'TOGGLE_FORM'
+    }
+    store.dispatch(action);
+    expect(store.getState().formVisibleOnPage).toEqual(formVisibleReducer(undefined, action));
+  });
+
+  test('Check that initial state of selectedKegReducer matches root reducer', () => {
+    const action = {
+      type: 'SELECT_KEG',
+      name: 'T-Rex Tripel',
+      brand: 'Fossil Cove Brewery',
+      price: '$6.00',
+      alcoholContent: '8.0%',
+      pintsRemaining: 124,
+      id: 1 
+    }
+    store.dispatch(action);
+    expect(store.getState().selectedKeg).toEqual(selectedKegReducer(undefined, action));
+  });
+
 });
