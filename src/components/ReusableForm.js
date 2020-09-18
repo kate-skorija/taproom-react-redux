@@ -4,17 +4,14 @@ import PropTypes from "prop-types";
 function ReusableForm(props){
 
   const formStyles = {
-    paddingTop: '30px',
-    width: '70vw',
-    position: 'absolute',
-    top: '87%',
-    left: '50%',
-    transform: 'translate(-50%,-50%)'
+    padding: '30px 0',
+    width: '50%',
+    margin: '0 auto'
   }
   
   return (
     <React.Fragment>
-      <div> 
+      <div style={{width: '100%'}}> 
         <form style={formStyles} className="form-group row justify-content-center" onSubmit={props.formSubmissionHandler}>
           <input style={{margin: '20px'}} className='form-control input-sm'
           type='text'
