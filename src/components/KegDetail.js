@@ -4,16 +4,22 @@ import PropTypes from "prop-types";
 function KegDetail(props){
   const { keg, onClickingDelete, onClickingEdit } = props;
 
+  const detailStyles = {
+    padding: '40px',
+  }
+
   return (
     <React.Fragment>
-      <h1>Keg Details</h1>
-      <h2>{Object.values(keg)[0].name} - {Object.values(keg)[0].brand}</h2>
-      <p>Price: {Object.values(keg)[0].price} per pint</p>
-      <p>Alcohol Content: {Object.values(keg)[0].alcoholContent}</p>
-      <p>Pints Remaining: {Object.values(keg)[0].pintsRemaining}</p>
-      <button onClick = {onClickingEdit}>Update Keg</button>
-      <button onClick = { () => onClickingDelete(Object.values(keg)[0].id)}>Remove from Tap List</button>
-      <hr/>
+      <div style={detailStyles}>
+        <h2>{Object.values(keg)[0].name} - {Object.values(keg)[0].brand}</h2>
+        <p style={{fontSize: '20px'}}>Price: {Object.values(keg)[0].price} per pint</p>
+        <p style={{fontSize: '20px'}}>Alcohol Content: {Object.values(keg)[0].alcoholContent}</p>
+        <p style={{fontSize: '20px'}}>Pints Remaining: {Object.values(keg)[0].pintsRemaining}</p>
+        <div className="btn-group">
+          <button className="btn btn-secondary" onClick = {onClickingEdit}>Update Keg</button>
+          <button className="btn btn-secondary" onClick = { () => onClickingDelete(Object.values(keg)[0].id)}>Remove from Tap List</button>
+        </div>
+      </div>
     </React.Fragment>
   );
 }

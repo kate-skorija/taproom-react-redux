@@ -4,7 +4,7 @@ function Header(){
 
   const h1Styles = {
     fontFamily: 'Oleo Script Swash Caps', 
-    fontSize: '100px',
+    fontSize: '130px',
     padding: '30px 0 0 30px',
     marginBottom: '0'
   }
@@ -17,7 +17,7 @@ function Header(){
   
   const headerStyles = {
     padding: '15px',
-    paddingBottom: '40px',
+    paddingBottom: '60px',
     backgroundColor: 'darkolivegreen'
   }
   

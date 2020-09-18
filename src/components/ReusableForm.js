@@ -7,7 +7,7 @@ function ReusableForm(props){
     paddingTop: '30px',
     width: '70vw',
     position: 'absolute',
-    top: '80%',
+    top: '87%',
     left: '50%',
     transform: 'translate(-50%,-50%)'
   }
@@ -41,7 +41,7 @@ function ReusableForm(props){
           name='pintsRemaining'
           placeholder = 'Number of Pints'
           />
-          <button className="btn btn-dark" style={{marginLeft: '20px'}} type='submit'>{props.buttonText}</button>
+          <button className="btn btn-secondary btn-lg" style={{marginLeft: '20px'}} type='submit'>{props.buttonText}</button>
         </form>
       </div>
     </React.Fragment>

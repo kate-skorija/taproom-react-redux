@@ -3,17 +3,23 @@ import PropTypes from "prop-types";
 
 function Keg(props){
 
+  const kegStyles = {
+    padding: '40px',
+    backgroundColor: 'antiquewhite',
+    borderBottom: '4px solid slategray',
+  }
+
   return (
     <React.Fragment>
-      <div onClick = { () => props.whenKegClicked(props.id) }>
-        <h3>{props.name}</h3>
-        <h4>{props.brand}</h4>
-        <p>{props.price}</p>
-        <p>{props.alcoholContent}</p>
-        <p>{props.pintsRemaining}</p>
+      <div style={kegStyles}>
+        <div onClick = { () => props.whenKegClicked(props.id) }>
+          <h3 style={{fontSize:'40px'}}>{props.name} | {props.brand}</h3>
+          <p>{props.price}</p>
+          <p>{props.alcoholContent}</p>
+          <p>{props.pintsRemaining}</p>
+        </div>
+        <button className="btn btn-secondary" onClick = { () => props.whenPintSold(props.id)}>Pint Sold!</button>
       </div>
-      <button onClick = { () => props.whenPintSold(props.id)}>Pint Sold!</button>
-      <hr />
     </React.Fragment>
   );
 }

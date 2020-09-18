@@ -116,7 +116,9 @@ class KegControl extends React.Component {
       border: 'none',
       color: 'lightgray',
       fontSize: '40px',
-      fontFamily: 'Oleo Script Swash Caps'
+      fontFamily: 'Oleo Script Swash Caps',
+      outline: 'none',
+      verticalAlign: 'top'
     }
 
     return (
@@ -127,11 +129,8 @@ class KegControl extends React.Component {
         </div>
       </React.Fragment>
     );
-
   }
 }
-
-
 
 KegControl.propTypes = {
   masterKegList: PropTypes.object,
