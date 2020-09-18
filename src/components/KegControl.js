@@ -101,15 +101,29 @@ class KegControl extends React.Component {
     }
 
     const bodyStyles = {
-      margin: '40px',
+      width: '100vw',
+      height: '100vh',
       backgroundColor: 'tomato',
+      fontFamily: 'Lato',
+      marginTop: '-20px',
+      textAlign: 'center'
+    }
+
+    const buttonStyles = {
+      padding: '30px',
+      width: '100vw',
+      backgroundColor: '#292b2c',
+      border: 'none',
+      color: 'lightgray',
+      fontSize: '40px',
+      fontFamily: 'Oleo Script Swash Caps'
     }
 
     return (
       <React.Fragment>
-        <div styles={bodyStyles}>
+        <div style={bodyStyles}>
           {currentlyVisibleState}
-          <button className="btn btn-dark" onClick={this.handleClick}>{buttonText}</button>
+          <button style={buttonStyles} onClick={this.handleClick}>{buttonText}</button>
         </div>
       </React.Fragment>
     );
