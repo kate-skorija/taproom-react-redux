@@ -55,18 +55,17 @@ class KegControl extends React.Component {
   handlePintSold = (kegId) => {
     const { dispatch } = this.props;
     const kegToUpdate = this.props.masterKegList[kegId];
-    const { id, name, brand, price, alcoholContent, pintsRemaining } = kegToUpdate;
     if (kegToUpdate.pintsRemaining > 0) {
-      kegToUpdate.pintsRemaining = kegToUpdate.pintsRemaining - 1;
+      kegToUpdate.pintsRemaining--;
     }
     const action = {
       type: 'ADD_KEG',
-      name: name,
-      brand: brand,
-      price: price,
-      alcoholContent: alcoholContent,
-      pintsRemaining: pintsRemaining,
-      id: id
+      name: kegToUpdate.name,
+      brand: kegToUpdate.brand,
+      price: kegToUpdate.price,
+      alcoholContent: kegToUpdate.alcoholContent,
+      pintsRemaining: kegToUpdate.pintsRemaining,
+      id: kegToUpdate.id
     }
     dispatch(action);
     this.setState({editing: false});
