@@ -53,10 +53,10 @@ class KegControl extends React.Component {
   }
 
   handlePintSold = (kegId) => {
-    const {dispatch} = this.props;
+    const { dispatch } = this.props;
     const kegToUpdate = this.props.masterKegList[kegId];
     const { id, name, brand, price, alcoholContent, pintsRemaining } = kegToUpdate;
-    if(kegToUpdate.pintsRemaining > 0) {
+    if (kegToUpdate.pintsRemaining > 0) {
       kegToUpdate.pintsRemaining = kegToUpdate.pintsRemaining - 1;
     }
     const action = {
@@ -101,7 +101,8 @@ class KegControl extends React.Component {
     dispatch(action);
     this.setState({
       editing: false,
-      selectedTicket: null
+      selectedKeg: null,
+      formVisibleOnPage: false
     });
   }
 
