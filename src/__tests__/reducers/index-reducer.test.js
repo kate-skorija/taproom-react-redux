@@ -3,6 +3,8 @@ import formVisibleReducer from '../../reducers/form-visible-reducer';
 import kegListReducer from '../../reducers/keg-list-reducer';
 import selectedKegReducer from '../../reducers/selected-keg-reducer';
 import { createStore } from 'redux';
+import * as c from './../../actions/ActionTypes';
+
 
 
 describe('rootReducer', () => {
@@ -31,7 +33,7 @@ describe('rootReducer', () => {
 
   test('Check that initial state of kegListReducer matches root reducer', () => {
     const action = {
-      type: 'ADD_KEG',
+      type: c.ADD_KEG,
       name: 'T-Rex Tripel',
       brand: 'Fossil Cove Brewery',
       price: '$6.00',
@@ -45,7 +47,7 @@ describe('rootReducer', () => {
   
   test('Check that initial state of formVisibleReducer matches root reducer', () => {
     const action = {
-      type: 'TOGGLE_FORM'
+      type: c.TOGGLE_FORM
     }
     store.dispatch(action);
     expect(store.getState().formVisibleOnPage).toEqual(formVisibleReducer(undefined, action));
@@ -53,7 +55,7 @@ describe('rootReducer', () => {
 
   test('Check that initial state of selectedKegReducer matches root reducer', () => {
     const action = {
-      type: 'SELECT_KEG',
+      type: c.SELECT_KEG,
       name: 'T-Rex Tripel',
       brand: 'Fossil Cove Brewery',
       price: '$6.00',
