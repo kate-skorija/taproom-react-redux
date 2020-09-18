@@ -4,13 +4,9 @@ import PropTypes from "prop-types";
 function KegDetail(props){
   const { keg, onClickingDelete, onClickingEdit } = props;
 
-  const detailStyles = {
-    padding: '40px',
-  }
-
   return (
     <React.Fragment>
-      <div style={detailStyles}>
+      <div style={{padding: '40px'}}>
         <h2>{Object.values(keg)[0].name} - {Object.values(keg)[0].brand}</h2>
         <p style={{fontSize: '20px'}}>Price: {Object.values(keg)[0].price} per pint</p>
         <p style={{fontSize: '20px'}}>Alcohol Content: {Object.values(keg)[0].alcoholContent}</p>

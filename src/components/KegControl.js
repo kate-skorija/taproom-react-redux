@@ -100,13 +100,6 @@ class KegControl extends React.Component {
       buttonText = "Add Keg"
     }
 
-    function divColors() {
-      const colors = ['anitiquewhite', 'yellow', 'blue'];
-      let randomColor = colors[Math.floor(Math.random() * colors.length)];
-      document.getElementById("eachKeg").style.backgroundColor = randomColor;
-  
-    }
-
     const bodyStyles = {
       width: '100vw',
       height: '100vh',
