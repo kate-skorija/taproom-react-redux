@@ -10,11 +10,7 @@ class KegControl extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = {
-      formVisibleOnPage: false,
-      selectedKeg: null,
-      editing: false
-    };
+    this.state = { };
   }
 
   handleClick = () => {
@@ -145,7 +141,10 @@ KegControl.propTypes = {
 
 const mapStateToProps = state => {
   return {
-    masterKegList: state
+    masterKegList: state.masterKegList,
+    formVisibleOnPage: state.formVisibleOnPage,
+    selectedKeg: state.selectedKeg,
+    editing: state.editing
   }
 }
 
