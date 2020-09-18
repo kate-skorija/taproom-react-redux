@@ -15,7 +15,7 @@ function KegList(props) {
           whenPintSold = { props.onPintSoldClick }
           name={keg.name}
           brand={keg.brand}
-          pintsRemaining={keg.pintsRemaining}
+          pintsRemaining={parseInt(keg.pintsRemaining)}
           id={keg.id}
           key={keg.id}
           />

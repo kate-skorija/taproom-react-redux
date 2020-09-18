@@ -48,25 +48,34 @@ class KegControl extends React.Component {
   }
 
   handleChangingSelectedKeg = (id) => {
-    const selectedKeg = this.props.masterKegList.filter(keg => keg.id === id)[0];
+    const selectedKeg = this.props.masterKegList[id];
     this.setState({selectedKeg: selectedKeg, formVisibleOnPage: false});
   }
 
-  handlePintSold = (id) => {
-    const selectedKeg = this.props.masterKegList.filter(keg => keg.id === id)[0];
-    if (selectedKeg.pintsRemaining > 0){
-      selectedKeg.pintsRemaining = (selectedKeg.pintsRemaining - 1);
+  handlePintSold = (kegId) => {
+    const {dispatch} = this.props;
+    const kegToUpdate = this.props.masterKegList[kegId];
+    const { id, name, brand, price, alcoholContent, pintsRemaining } = kegToUpdate;
+    if(kegToUpdate.pintsRemaining > 0) {
+      kegToUpdate.pintsRemaining = kegToUpdate.pintsRemaining - 1;
     }
-    // const editedKegList = this.props.masterKegList
-    //   .filter(keg => keg.id !== id)
-    //   .concat(selectedKeg);
-    this.setState({selectedKeg: null});
+    const action = {
+      type: 'ADD_KEG',
+      name: name,
+      brand: brand,
+      price: price,
+      alcoholContent: alcoholContent,
+      pintsRemaining: pintsRemaining,
+      id: id
+    }
+    dispatch(action);
+    this.setState({editing: false});
   }
 
   handleDeletingKeg = (id) => {
     const { dispatch } = this.props;
     const action = {
-      type: 'DELETE_TICKET',
+      type: 'DELETE_KEG',
       id: id
     }
     dispatch(action);
