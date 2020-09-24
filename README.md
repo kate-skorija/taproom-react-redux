@@ -2,14 +2,15 @@
 
 ## React with Redux Code Review for Epicodus
 ### 09.11.2020
-<br>
-
 ### By Kate Skorija
 <br>
 
 ![Form to add a keg](./public/AddBeer.png)
+Form to add a keg.
 ![List of kegs](./public/BeerList.png)
+List of kegs, with pints available for each keg and pint sold button.
 ![Keg Details](./public/BeerDetails.png)
+Details page for each keg.
 
 
 ## Description
