@@ -46,9 +46,16 @@ If there are any issues or questions, please reach out to me through [my GitHub 
 
 ## Technologies Used
 
-*  [Visual Studio Code](https://code.visualstudio.com/)
-*  [Markdown](https://daringfireball.net/projects/markdown/)
-*  [React](https://reactjs.org/)
+*  Git
+*  CSS
+*  JavaScript
+*  JSX
+*  React
+*  Redux
+*  React 
+*  Webpack
+*  npm
+*  Jest
 <br><br>
 
 ## Available Scripts
