@@ -1,10 +1,16 @@
 # Taproom 
 
-## _React with Redux Code Review for Epicodus, 09.11.2020_
+## React with Redux Code Review for Epicodus
+### 09.11.2020
 <br>
 
 ### By Kate Skorija
 <br>
+
+![Form to add a keg](./public/AddBeer.png)
+![List of kegs](./public/BeerList.png)
+![Keg Details](./public/BeerDetails.png)
+
 
 ## Description
 

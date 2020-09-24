@@ -25,7 +25,7 @@ function Header(){
     <React.Fragment>
       <div style={headerStyles}>
         <h1 style={h1Styles}>The Fishbowl</h1>
-        <h2 style={h2Styles}>Historic Tap Room</h2>
+        <h2 style={h2Styles}>Beers On Tap</h2>
       </div>
     </React.Fragment>
   );

@@ -5,15 +5,16 @@ function Keg(props){
 
   const kegStyles = {
     padding: '40px',
-    backgroundColor: 'divColors()',
-    borderBottom: '4px solid slategray',
+    backgroundColor: 'antiquewhite',
+    borderBottom: '4px solid lightsalmon',
   }
 
   return (
     <React.Fragment>
-      <div style={kegStyles} id="eachKeg">
+      <div style={kegStyles}>
         <div onClick = { () => props.whenKegClicked(props.id) }>
-          <h3 style={{fontSize:'40px'}}>{props.name} | {props.brand}</h3>
+          <h3 style={{fontSize:'40px'}}>{props.name}</h3>
+          <h4>{props.brand}</h4>
           <p>{props.price}</p>
           <p>{props.alcoholContent}</p>
           <p style={{fontSize: '20px'}}>{props.pintsRemaining}</p>
