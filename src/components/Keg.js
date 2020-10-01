@@ -4,22 +4,25 @@ import PropTypes from "prop-types";
 function Keg(props){
 
   const kegStyles = {
-    padding: '40px',
-    backgroundColor: 'antiquewhite',
-    borderBottom: '4px solid lightsalmon',
+    display: 'flex',
+    margin: '1em',
+    flexDirection: 'column',
+    boxShadow: '1px 1px 5px rgba(0, 0, 0, 0.2)',
+    borderRadius: '.6em',
+    padding: '1em',
+    backgroundColor: 'darkorange',
   }
 
   return (
     <React.Fragment>
       <div style={kegStyles}>
-        <div onClick = { () => props.whenKegClicked(props.id) }>
-          <h3 style={{fontSize:'40px'}}>{props.name}</h3>
-          <h4>{props.brand}</h4>
-          <p>{props.price}</p>
-          <p>{props.alcoholContent}</p>
-          <p style={{fontSize: '20px'}}>{props.pintsRemaining}</p>
-        </div>
-        <button className="btn btn-secondary" onClick = { () => props.whenPintSold(props.id)}>Pint Sold!</button>
+        <h3 style={{fontSize:'35px'}}>{props.name}</h3>
+        <h4>{props.brand}</h4>
+        <p>{props.price}</p>
+        <p>{props.alcoholContent}</p>
+        <p style={{fontSize: '20px'}}>{props.pintsRemaining}</p>
+        <button style={{marginBottom: '5px'}} className="btn btn-dark" onClick = { () => props.whenPintSold(props.id)}>Pint Sold!</button>
+        <button className="btn btn-dark" onClick = { () => props.whenKegClicked(props.id)}>Details</button>
       </div>
     </React.Fragment>
   );

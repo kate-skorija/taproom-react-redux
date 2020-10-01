@@ -16,12 +16,17 @@ class KegControl extends React.Component {
 
   handleClick = () => {
     const { dispatch } = this.props;
-    if (this.props.selectedKeg != null) {
+    if (this.props.selectedKeg != null && this.props.editing != false) {
       const action = a.deselectKeg();
       dispatch(action);
+      const action2 = a.toggleEditForm();
+      dispatch (action2);
+    } else if (this.props.selectedKeg != null) {
+      const action3 = a.deselectKeg();
+      dispatch(action3);
     } else {
-      const action2 = a.toggleForm();
-      dispatch(action2);
+      const action3 = a.toggleForm();
+      dispatch(action3);
     };
   };
 
@@ -102,29 +107,40 @@ class KegControl extends React.Component {
 
     const bodyStyles = {
       width: '100vw',
-      height: '100vh',
-      backgroundColor: 'tomato',
+      height: '82vh',
+      backgroundColor: 'darkolivegreen',
       fontFamily: 'Lato',
       marginTop: '-20px',
-      textAlign: 'center'
+      textAlign: 'center',
+      position: 'relative',
+      paddingBottom: '6em'
     }
 
     const buttonStyles = {
-      padding: '30px',
       width: '100vw',
+      height: '20vh',
       backgroundColor: '#292b2c',
       border: 'none',
-      color: 'lightgray',
+      color: 'antiquewhite',
       fontSize: '40px',
       fontFamily: 'Oleo Script Swash Caps',
       outline: 'none'
+    }
+
+    const footerStyles = {
+      position: 'absolute',
+      bottom: '0',
+      width: '100vw',
+      height: '20vh'
     }
 
     return (
       <React.Fragment>
         <div style={bodyStyles}>
           {currentlyVisibleState}
-          <button style={buttonStyles} onClick={this.handleClick}>{buttonText}</button>
+          <div style={footerStyles}>
+            <button style={buttonStyles} onClick={this.handleClick}>{buttonText}</button>
+          </div>
         </div>
       </React.Fragment>
     );

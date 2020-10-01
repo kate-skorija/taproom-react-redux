@@ -4,8 +4,19 @@ import PropTypes from "prop-types";
 
 function KegList(props) { 
 
+  const kegListStyles = {
+    display: 'grid',
+    gridTemplateColumns: '1fr 1fr 1fr 1fr',
+    gridTemplateRows: '43vh 43vh 43vh 43vh 43vh 43vh',
+    width: '100vw',
+    height: '65vh',
+    overflow: 'scroll',
+  }
+
+
   return (
     <React.Fragment>
+      <div style={kegListStyles}>
       {Object.values(props.kegList).map((keg) => {
         return <Keg 
           whenKegClicked = { props.onKegSelection }
@@ -17,6 +28,7 @@ function KegList(props) {
           key={keg.id}
           />
       })} 
+      </div>
     </React.Fragment>
   );
 }

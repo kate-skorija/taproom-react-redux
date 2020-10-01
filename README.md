@@ -5,13 +5,8 @@
 ### By Kate Skorija
 <br>
 
-![Form to add a keg](./public/AddBeer.png)
-Form to add a keg.
 ![List of kegs](./public/BeerList.png)
-List of kegs, with pints available for each keg and pint sold button.
-![Keg Details](./public/BeerDetails.png)
-Details page for each keg.
-
+List of kegs, with pints available for each keg and pint sold and details buttons.
 
 ## Description
 
