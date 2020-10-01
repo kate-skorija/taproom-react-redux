@@ -16,8 +16,7 @@ function Header(){
   }
   
   const headerStyles = {
-    padding: '15px',
-    paddingBottom: '60px',
+    padding: '15px 15px 60px 15px',
     backgroundColor: 'darkolivegreen'
   }
   

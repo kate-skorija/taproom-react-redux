@@ -52,7 +52,6 @@ If there are any issues or questions, please reach out to me through [my GitHub 
 *  JSX
 *  React
 *  Redux
-*  React 
 *  Webpack
 *  npm
 *  Jest

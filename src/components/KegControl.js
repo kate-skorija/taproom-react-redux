@@ -117,8 +117,7 @@ class KegControl extends React.Component {
       color: 'lightgray',
       fontSize: '40px',
       fontFamily: 'Oleo Script Swash Caps',
-      outline: 'none',
-      verticalAlign: 'top'
+      outline: 'none'
     }
 
     return (
