@@ -10,7 +10,9 @@ List of kegs, with pints available for each keg and pint sold and details button
 
 ## Description
 
-This week we learned how to integrate Redux into our React applications, focusing planning where state lives, TDD for reducers, and implementing Redux with single and multiple state slices. This is an app for a tap room, where a user can see all kegs available, view a kegs detail's, add a new keg, delete a keg, and update a keg's information. Users can also keep track of how many pints of a keg are sold. 
+Check out the [deployed application!](https://kate-skorija.github.io/taproom-redux/)
+
+This week we learned how to integrate Redux into our React applications, focusing planning where state lives, TDD for reducers, and implementing Redux with single and multiple state slices. This is an app for a taproom, where a user can see all kegs available, view a kegs detail's, add a new keg, delete a keg, and update a keg's information. Users can also keep track of how many pints of a keg are sold. 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 <br><br>
