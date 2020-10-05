@@ -13,7 +13,6 @@ function KegList(props) {
     overflow: 'scroll',
   }
 
-
   return (
     <React.Fragment>
       <div style={kegListStyles}>

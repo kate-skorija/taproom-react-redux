@@ -10,7 +10,7 @@ function Keg(props){
     boxShadow: '1px 1px 5px rgba(0, 0, 0, 0.2)',
     borderRadius: '.6em',
     padding: '1em',
-    backgroundColor: 'darkorange',
+    backgroundColor: 'rgba(255, 140, 0, 0.7)',
   }
 
   return (
