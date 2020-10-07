@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "dcedeb5c42f4179cadc75d35394d99ef",
+    "revision": "bec30a145f360f185a6fbdafd8d8545b",
     "url": "/taproom-redux/index.html"
   },
   {
-    "revision": "f237e096a243dd6b2501",
+    "revision": "793441e3f9590a5d26a8",
     "url": "/taproom-redux/static/css/main.5ecd60fb.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/taproom-redux/static/js/2.ef35e5c1.chunk.js"
   },
   {
-    "revision": "f237e096a243dd6b2501",
-    "url": "/taproom-redux/static/js/main.a3f5fc95.chunk.js"
+    "revision": "793441e3f9590a5d26a8",
+    "url": "/taproom-redux/static/js/main.d1e13d88.chunk.js"
   },
   {
     "revision": "4a1db5323fa140602c15",

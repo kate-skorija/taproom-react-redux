@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/taproom-redux/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/taproom-redux/static/js/main.a3f5fc95.chunk.js",
-    "main.js.map": "/taproom-redux/static/js/main.a3f5fc95.chunk.js.map",
+    "main.js": "/taproom-redux/static/js/main.d1e13d88.chunk.js",
+    "main.js.map": "/taproom-redux/static/js/main.d1e13d88.chunk.js.map",
     "runtime-main.js": "/taproom-redux/static/js/runtime-main.554e76f9.js",
     "runtime-main.js.map": "/taproom-redux/static/js/runtime-main.554e76f9.js.map",
     "static/js/2.ef35e5c1.chunk.js": "/taproom-redux/static/js/2.ef35e5c1.chunk.js",
     "static/js/2.ef35e5c1.chunk.js.map": "/taproom-redux/static/js/2.ef35e5c1.chunk.js.map",
     "index.html": "/taproom-redux/index.html",
-    "precache-manifest.65babff8596acb94e1a3a8e63c045e0f.js": "/taproom-redux/precache-manifest.65babff8596acb94e1a3a8e63c045e0f.js",
+    "precache-manifest.71dbe972553ecf3606e665eb7d094a05.js": "/taproom-redux/precache-manifest.71dbe972553ecf3606e665eb7d094a05.js",
     "service-worker.js": "/taproom-redux/service-worker.js",
     "static/css/main.5ecd60fb.chunk.css.map": "/taproom-redux/static/css/main.5ecd60fb.chunk.css.map",
     "static/media/beer.jpg": "/taproom-redux/static/media/beer.2570c231.jpg",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.554e76f9.js",
     "static/js/2.ef35e5c1.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.a3f5fc95.chunk.js"
+    "static/js/main.d1e13d88.chunk.js"
   ]
 }
